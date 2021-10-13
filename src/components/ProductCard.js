@@ -1,14 +1,16 @@
-import BasicCard from './MuiCard.js'
+import RecipeReviewCard from "./RecipeReviewCard.js";
+import Grid from "@mui/material/Grid";
 
 function ProductCard({ product }) {
-  console.log("Productcard: ", product);
   return (
     <div className="product-card flex-column">
       <div className="product-image-frame">
-        <BasicCard />
-        <img alt="product image" className="product-image" src={product.url} />
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <RecipeReviewCard product={product} />
+          </Grid>
+        </Grid>
       </div>
-      <div className="product-name">{product.name}</div>
     </div>
   );
 }
