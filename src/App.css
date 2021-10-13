@@ -36,3 +36,40 @@
     transform: rotate(360deg);
   }
 }
+
+/*
+  * These are the shared styles for the apps.  Ideally, you won't have to edit these styles, but they are provided for reference as they are the main styles that the HTML elements of *both* apps will have applied to them.
+*/
+
+button {
+  font-size: 1.2vw;
+  background-color: rgb(206, 95, 95);
+  color: gainsboro;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  padding: 3vh;
+  margin: 0.5vh;
+  border-radius: 50%;
+  width: auto;
+  align-self: center;
+}
+.App {
+  text-align: center;
+  height: 95%;
+}
+.flex-column {
+  display: flex;
+  flex-flow: column wrap;
+}
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+.app-title {
+  font-size: 1.8vw;
+  font-weight: bolder;
+  background-color: #58e0c7;
+  border: outset;
+  border-width: 3px 0px 3px 0px;
+  text-shadow: 2px 2px 5px grey;
+}
